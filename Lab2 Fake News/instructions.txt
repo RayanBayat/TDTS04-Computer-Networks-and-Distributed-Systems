@@ -1,0 +1,13 @@
+First you have to make sure that you have python installed on your machine. Then navigate to the location of the .py file and open cmd (for example windows powershell).
+In your cmd write: python ./proxytest2.py 127.192.3.2 9999
+Open your web browser (Firefox is recommended because it’s easier than other web browsers) and navigate to the proxy settings where you should switch to manual proxy configuration and write the same ip-address (127.192.3.2) in the HTTP Proxy field and same port number (9999) in the Port field as you wrote in your cmd. Then the only thing left is to go to some simple HTTP web pages such as : 
+1. http://zebroid.ida.liu.se/fakenews/test1.txt
+2. http://zebroid.ida.liu.se/fakenews/test2.txt
+3. http://zebroid.ida.liu.se/fakenews/test3.html
+4. http://zebroid.ida.liu.se/fakenews/test4.html
+5. http://zebroid.ida.liu.se/fakenews/test5.html
+
+Limitations for our proxy: 
+1. It can handle only simple web pages.
+2. It can only handle HTTP/1.0 and HTTP/1.1 requests. 
+3. HTTPs is not supported.
